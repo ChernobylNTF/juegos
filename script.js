@@ -34,10 +34,10 @@ window.addEventListener('load', () => {
         let isGameOver = false;
         const playerInitialX = canvas.width / 2 - 15;
         const playerInitialY = canvas.height - 40;
-        const player = { width: 30, height: 30, x: playerInitialX, y: playerInitialY, speed: 4 };
-        const bulletProps = { width: 5, height: 10, color: 'yellow', speed: 7 };
+        const player = { width: 50, height: 50, x: playerInitialX, y: playerInitialY, speed: 4 };
+        const bulletProps = { width: 5, height: 10, color: 'yellow', speed: 10 };
         let bullets = [];
-        const enemyProps = { width: 25, height: 25, speed: 2 };
+        const enemyProps = { width: 45, height: 45, speed: 2 };
         let enemies = [];
         let enemySpawnIntervalId = null;
 
@@ -214,7 +214,7 @@ function checkCollisions() {
         // --- NUEVO: Estrellas para el fondo animado ---
 const starProps = {
     count: 100, // Número de estrellas
-    speed: 0.5,  // Velocidad de caída (lenta)
+    speed: 2,  // Velocidad de caída (lenta)
     color: 'white',
     size: 1.5    // Tamaño de cada estrella (píxeles)
 };
