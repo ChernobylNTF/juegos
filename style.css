@@ -1,0 +1,29 @@
+body {
+    margin: 0; /* Quita márgenes por defecto */
+    background-color: #333; /* Fondo oscuro para la página */
+    color: #eee; /* Texto claro */
+    display: flex;
+    flex-direction: column; /* Apila título y canvas verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+/* Estilo para el canvas */
+#gameCanvas {
+    border: 2px solid white; 
+    background-color: #000; 
+    display: block; /* Mantenemos esto */
+    margin: 10px auto; /* Añadimos un margen arriba/abajo y centramos */
+
+    /* --- NUEVO: Tamaño adaptable --- */
+    width: 95%;         /* Ocupa el 95% del ancho disponible */
+    max-width: 800px;   /* Pero como máximo 800px (para que no sea gigante en tablets) */
+    aspect-ratio: 16 / 9; /* Mantiene una proporción 16:9 (panorámica) */
+    /* O puedes probar otras como 4 / 3 */
+    /* Quita cualquier 'height' fija que pudieras tener aquí */
+}
