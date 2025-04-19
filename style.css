@@ -1,16 +1,29 @@
 body {
-    margin: 0; /* Quita márgenes por defecto */
-    background-color: #333; /* Fondo oscuro para la página */
-    color: #eee; /* Texto claro */
+    /* --- ESTILOS QUE YA TENÍAS (EJEMPLOS) --- */
+    margin: 0; 
+    background-image: linear-gradient(to bottom, #0b001a, #1f0033, #0b001a); /* O el fondo que elegiste */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #eee; 
     display: flex;
-    flex-direction: column; /* Apila título y canvas verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     padding-top: 20px;
-    font-family: sans-serif;
+    /* --- FIN DE ESTILOS ANTERIORES --- */
+
+    /* --- AÑADES ESTA LÍNEA AQUÍ DENTRO --- */
+    font-family: 'Bungee Spice', sans-serif; /* Fuente para casi todo */
+    /* ------------------------------------ */
+} 
+
+/* (Opcional) Si quieres que los párrafos largos usen fuente normal: */
+p, li {
+    font-family: sans-serif; /* Vuelve a la fuente normal */
 }
 
-h1 {
-    margin-bottom: 15px;
+h1, .info-section h2 {
+    /* Ya no necesitas poner font-family aquí si lo hereda del body */
+    /* Puedes ajustar tamaño, color, etc. */
 }
 
 /* Estilo para el canvas */
